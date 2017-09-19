@@ -1,0 +1,414 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+	font-family: 'Open Sans', Sans-Serif;
+}
+header {
+  background-color:#313234;
+  height: 50px;
+	width: 100%;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+  clear: both;
+}
+
+
+[class*="col-"] {
+	float: left;
+	min-height: 10px;
+	margin: 0 auto;
+	text-align: center;
+    /*border: 1px solid black;*/
+}
+
+header >nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: right;
+}
+
+header >nav ul li a {
+	line-height: 50px;
+	padding: 0 40px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header > nav ul > li {
+    display: inline-block;
+}
+nav ul > li > a:hover {
+	background: #545856;
+	height: 50px;
+	color: #06c7e6;
+}
+header img {
+	padding: 10px 0;
+}
+/*  cała sekcja dotyczy paska nawigacji */
+
+/* Tu zaczyna sie CSS dotyczacy prezentacji */
+.hero {
+	width: 100%;
+	height: 100vh;
+	padding-top: 22vh;
+	text-align: right;
+	background-image: url('http://st.gde-fon.com/wallpapers_original/429846_kompyuter_mysh_ofisnyj_1920x1080_www.Gde-Fon.com.jpg');
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #000000;
+	overflow: hidden;
+}
+.slogan {
+	float: right;
+}
+.slogan h1 {
+	margin: 0 auto;
+	font-size: 38px;
+	font-weight: 500;
+	background-color: rgba(193,193,193,0.4);
+	padding: 70px;
+	color: white;
+	text-shadow: 2px 2px 5px #000;
+}
+/* a Tu teoretycznie się kończy :) */
+
+/* SECTION OF ADVANTAGES */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.fa {
+	display: inline-block;
+	margin: 10px;
+	font-size: 50px;
+
+}
+section>.container {
+	margin: 50px auto;
+	text-align: center;
+
+}
+
+/* .file h2, .fa-file {} */
+
+
+.file {
+    background-color: #313234;
+    color: white;
+    padding: 80px 10px 80px 10px;
+}
+
+.file:hover {
+	color: #06c7e6;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.wifi {
+	background-color: #313234;
+    color: white;
+}
+.wifi:hover {
+	color: #06c7e6;
+	cursor: pointer;
+}
+.car {
+	background-color: #313234;
+    color: white;
+}
+.car:hover {
+	color: #06c7e6;
+	cursor: pointer;
+}
+.icons .row {
+  float: left;
+  display: flex;
+}
+
+/* INFO */
+
+.info {
+	background-color: white;
+	color: black;
+	height: 100px;
+	line-height: 50px;
+	max-width: 100%;
+}
+.info p {
+	padding: 30px 0 30px 0;
+}
+
+.info h2 {
+	font-size: 40px;
+	text-align: center;
+}
+/* END OF INFO */
+
+/* GALLERY */
+.gallery [class*="col-"] {
+	position: relative;
+}
+.gallery .col-2
+.gallery .col-4 {
+	position: relative;
+}
+.layer {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	opacity: 0;
+	transition: .3s;
+	padding-top: 70px;
+}
+.layer:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	opacity: 1;
+	display: inline-block;
+}
+.layer i.fa {
+	color: white;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+
+}
+.image {
+	width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+/* END OF GALLERY */
+
+/* SECTION OF OUR TEAM BELOW */
+.team [class*="col-"] {
+	position: relative;
+	padding: 40px 0 40px 0;
+}
+.layer-1 {
+	position: absolute;
+	display: inline-block;
+	height: 192px;
+    width: 192px;
+	text-align: center;
+	opacity: 0;
+	transition: .3s;
+	padding-top: 80px;
+	color: white;
+	border-radius: 50%;
+}
+.layer-1:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	opacity: 1;
+}
+
+.image-1 {
+    height: auto;
+    height: 192px;
+  	width: 192px;
+ 	display: inline-block;
+}
+.team h2 {
+	text-align: center;
+ 	font-size: 40px;
+}
+.image-center {
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	border-radius: 50%;
+}
+
+
+
+/*.team .col-3 img:hover{
+  opacity: .3; */
+
+ /* END OF OUR TEAM  */
+
+/*  DESCRIPTION + PHOTO SECTION */
+
+.description {
+	background-color: white;
+	display: flex;
+	color: black;
+}
+.description p {
+	padding: 30px 20px 30px 20px;
+}
+.left {
+	padding-top: 55px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	background-color: white;
+
+}
+.white {
+	color: black;
+	font-size: 40px;
+	font-family: 'Open Sans', Sans-Serif;
+}
+
+/* END OF DESCRIPTION + PHOTO SECTION */
+
+/* SECTION WITH NUMBERS */
+
+
+.number h2 {
+	text-align: right;
+	font-size: 40px;
+}
+.number-2 h2 {
+	text-align: left;
+	font-size: 40px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.numbers h2 {
+	text-align: center;
+	font-size: 40px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.numbers {
+	padding: 80px 0 80px 0;
+}
+.blue {
+	color: #06c7e6;
+	padding: 0;
+	margin-top: 0;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Open Sans', Sans-Serif;
+}
+/* END OF SECTION WITH NUMBERS */
+
+
+/* SOCIAL SECTION */
+.social {
+	display: flex;
+}
+
+.social .row {
+	background-color: #313234;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+
+}
+.social h2 {
+	color: white;
+	text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.social p {
+	color: white;
+	text-align: center;
+	padding: 0 20px;
+}
+
+.social-media i {
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	cursor: pointer;
+	line-height: 40px;
+	text-align: center;
+}
+.social-media .fa {
+	background-color: #06c7e6;
+	color: white;
+	transition: ease-in-out, .5s
+}
+
+/* FOOTER */
+    .footer {
+	background-color: #292a2b;
+	color: white;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 20px;
+}
+
+@media(max-width: 767px) {
+	[class*="col-"] {
+    width: 100%;
+    padding: 2px;
+    float:left;
+}
+	.col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+	img {
+	max-width: 100%;
+	float: none;
+	}
+	header {
+	height: auto;
+	width: 100%;
+	}
+	header > nav ul > li {
+	display: block;
+	}
+	header > nav ul {
+	float: none;
+	width: 100%;
+	}
+	header > nav ul > li {
+	display: block;
+	text-align: center;
+	}
+	.icons .row {
+  	float: left;
+  	display: block;
+    }
+    .nav, .container {
+    text-align: center;
+    }
+}
